@@ -1,5 +1,5 @@
 ---
-- hosts: mywebservers
+- hosts: all
   become: yes
   gather_facts: yes
   tasks: 
@@ -7,22 +7,8 @@
     apt:
       name: apache2
       state: present
-    when: ansible_os_family =="Debian"
 
   - name: i want to start apache2
     service:
       name: apache2
       state: restarted 
-    when: ansible_os_family =="Debian"
-
-  - name: i want to install webserver on RedHat nodes
-    yum:
-      name: httpd
-      state: present
-    when: ansible_os_family =="RedHat"
-
-  - name: i want to start webserver
-    service:
-       name: httpd
-       state: started
-    when: ansible_os_family =="RedHat"
