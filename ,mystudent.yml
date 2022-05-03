@@ -1,0 +1,17 @@
+---
+- students names: 
+  - name: jay
+    phone: 9898765862
+    address: 
+    - door: 697
+    - street: 23
+    - pincode: 443
+  
+  - name: jay
+    phone: 9898765862
+    address: 
+    - door: 697
+    - street: 23
+    - pincode: 443
+
+
