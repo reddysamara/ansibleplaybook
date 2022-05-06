@@ -1,6 +1,6 @@
 ---
 - hosts: 172.31.10.250 
-  become: yes
+  becomes: yes
   tasks: 
   - name: install git 
     apt:
