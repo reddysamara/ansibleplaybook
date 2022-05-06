@@ -14,7 +14,7 @@
       state: present
     tags: mytree
 
-  - name:  install wget
+  - name: wget
     apt:
       name: wget
       state: present
